@@ -1,7 +1,3 @@
-Below is a more visually appealing and well-structured `README.md` template for your GitHub project, including sections formatted for better clarity and organization.
-
----
-
 # 🌟 FLO CLTV Prediction
 
 This project predicts **Customer Lifetime Value (CLTV)** for **FLO** customers using **BG/NBD** and **Gamma-Gamma** models. It helps in creating actionable insights for sales and marketing strategies, leveraging both online and offline purchase data.
