@@ -1,46 +1,71 @@
-Project Purpose
-FLO aims to develop a roadmap for its sales and marketing strategies. This project supports the company’s medium- and long-term planning by forecasting the potential future value of existing customers.
+🌟 FLO CLTV Prediction
+This project predicts Customer Lifetime Value (CLTV) for FLO customers using BG/NBD and Gamma-Gamma models. It helps in creating actionable insights for sales and marketing strategies, leveraging both online and offline purchase data.
 
-Dataset
-The project uses a dataset containing historical purchase data from OmniChannel customers who made purchases in both online and offline channels during 2020-2021. Key variables in the dataset include:
+🚀 Project Overview
+📝 Purpose
+FLO aims to enhance its medium- and long-term planning by predicting the future potential value of its customers. This project supports decision-making processes by analyzing historical customer data and segmenting customers based on their predicted CLTV.
 
-master_id: Unique customer identifier
-order_channel: Platform used for shopping (e.g., Android, iOS, Desktop, Mobile, Offline)
-last_order_channel: The platform of the most recent purchase
-first_order_date: Date of the first purchase
-last_order_date: Date of the most recent purchase
-last_order_date_online: Date of the most recent online purchase
-last_order_date_offline: Date of the most recent offline purchase
-order_num_total_ever_online: Total number of online purchases
-order_num_total_ever_offline: Total number of offline purchases
-customer_value_total_ever_offline: Total expenditure in offline purchases
-customer_value_total_ever_online: Total expenditure in online purchases
-interested_in_categories_12: Categories shopped in during the last 12 months
-Key Tasks
-Task 1: Data Preparation
-Clean and preprocess the data, including outlier handling and feature engineering.
-Convert date columns to a proper datetime format.
-Task 2: Building the CLTV Data Structure
-Calculate required variables such as recency, frequency, and monetary for CLTV calculation.
-Task 3: Modeling
-Fit the BG/NBD model to estimate expected purchases in the next 3 and 6 months.
-Fit the Gamma-Gamma model to predict average monetary values.
-Calculate 6-month CLTV values.
-Task 4: Segmentation
-Segment customers into four groups (A, B, C, D) based on standardized CLTV scores.
-Provide actionable insights and recommendations for selected segments.
-Task 5: Functionality
-Implement a function to automate the entire process from data preparation to CLTV calculation and segmentation.
-Tools and Libraries
+📊 Dataset
+The dataset consists of purchase history for customers who made transactions across OmniChannel platforms (online and offline) between 2020 and 2021.
+
+📂 Dataset Features
+Column Name	Description
+master_id	Unique customer identifier
+order_channel	Platform used for shopping (e.g., Android, iOS)
+last_order_channel	Platform of the most recent purchase
+first_order_date	Date of the first purchase
+last_order_date	Date of the most recent purchase
+order_num_total_ever_online	Total number of online purchases
+order_num_total_ever_offline	Total number of offline purchases
+customer_value_total_ever_online	Total spending on online purchases
+customer_value_total_ever_offline	Total spending on offline purchases
+interested_in_categories_12	Categories purchased in the last 12 months
+🔧 Key Features
+🛠 Tasks
+Data Preparation: Clean and preprocess the data, handle outliers, and engineer new features.
+Building CLTV Structure: Calculate metrics like recency, frequency, and monetary values.
+Modeling:
+Fit BG/NBD and Gamma-Gamma models.
+Predict expected purchases and customer value for 3 and 6 months.
+Segmentation: Create customer segments (A, B, C, D) based on standardized CLTV values.
+Functionality: Automate the entire workflow into reusable functions.
+📈 Project Workflow
+1️⃣ Data Preparation
+Handle outliers using thresholds.
+Engineer total purchase and total spending features.
+Convert date fields into appropriate formats.
+2️⃣ CLTV Data Structure
+Calculate:
+Recency (weeks): Time between first and last purchase.
+Frequency: Number of repeat purchases.
+Monetary: Average spending per transaction.
+3️⃣ Modeling
+BG/NBD Model: Predict purchase frequency.
+Gamma-Gamma Model: Predict monetary value.
+Combine results to calculate 6-month CLTV.
+4️⃣ Segmentation
+Group customers into 4 segments (A, B, C, D) using CLTV values.
+Provide actionable insights for strategic planning.
+📊 Results
+🎯 Outputs
+Predicted CLTV for individual customers.
+Customer Segments: A, B, C, D based on standardized CLTV.
+🛠 Example Insights
+Group A: High-value customers – focus on retention and upselling.
+Group D: Low-value customers – optimize marketing expenses.
+🛠 Tools and Libraries
 Python
 Pandas
 NumPy
-Matplotlib
-Datetime
 Lifetimes
+Matplotlib
+Scikit-learn
+🌟 Contribution
+Contributions are welcome!
+Feel free to fork this repository, create issues, or submit pull requests for improvements.
 
-Contributing
-Feel free to fork the repository and submit pull requests. Feedback and suggestions are always welcome!
-
-License
+📜 License
 This project is licensed under the MIT License.
+
+📧 Contact
+For inquiries, please reach out at your-email@example.com.
