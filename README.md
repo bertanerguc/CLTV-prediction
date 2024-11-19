@@ -38,27 +38,7 @@ NumPy
 Matplotlib
 Datetime
 Lifetimes
-How to Run
-Clone the repository:
 
-bash
-Kodu kopyala
-git clone https://github.com/your-username/FLO_CLTV_Prediction.git
-cd FLO_CLTV_Prediction
-Install required libraries:
-
-bash
-Kodu kopyala
-pip install -r requirements.txt
-Run the script:
-
-bash
-Kodu kopyala
-python FLO_CLTV_Prediction.py
-Outputs
-Predicted CLTV values for each customer
-Segmented customer groups
-Actionable recommendations for marketing strategies
 Contributing
 Feel free to fork the repository and submit pull requests. Feedback and suggestions are always welcome!
 
